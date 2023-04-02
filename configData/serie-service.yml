@@ -3,18 +3,13 @@ server:
 spring:
   application:
     name: serie-service
+  mongodb:
+    embedded:
+      version: 4.0.2
   data:
     mongodb:
-      username: usr-serie-service-mongo
-      password: pwd-serie-service-mongo
-      database: serie-service-dev-mongo
+      database: test
       port: 27017
-      host: localhost
-  jpa:
-    hibernate.ddl-auto: update
-    generate-ddl: true
-    show-sql: true
-
 info:
   application:
     name: serie-service
